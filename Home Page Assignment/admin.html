@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.gadmin{
+background: #B2BEB5;
+background: linear-gradient(to bottom, #B2BEB5 0%, #A3AFA6 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #B2BEB5), color-stop(100%, #A3AFA6));
+background: -webkit-linear-gradient(top, #B2BEB5 0%, #A3AFA6 100%);
+background: -moz-linear-gradient(top, #B2BEB5 0%, #A3AFA6 100%);
+background: -o-linear-gradient(top, #B2BEB5 0%, #A3AFA6 100%);
+background: -ms-linear-gradient(top, #B2BEB5 0%, #A3AFA6 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B2BEB5', endColorstr='#A3AFA6', GradientType=0);
+border: 1px solid #94A097;
+box-shadow: inset 0 1px 0 #C1CDC4;
+-webkit-box-shadow: inset 0 1px 0 #C1CDC4;
+-moz-box-shadow: inset 0 1px 0 #C1CDC4;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+ 
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+</style>
+				
+<nav class="topnav">
+<a href="home.html">Home Page</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="gallery.html">Gallery</a>
+<a href="admin.html">Admin</a>
+</nav>
+	<link rel="stylesheet" href="admin.css">
+</head>
+	<body class="gadmin">
+		
+	
+		<header>
+			<h1>ADMIN </h1>
+		</header>
+
+			
+			<div id="galleryadmin">
+		 <button id="add_button" type="button">Add Image</button>
+	<div id="gallerypics">
+	</div>
+
+
+
+<div id="myModal" class="modal">
+
+    
+        <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Add Image</h2>
+            </div>
+			
+            <div class="modal-body">
+				<form id="image_form" action="" name="form2">
+					<div class="row">
+						<label for="nameimg">Image-Name:</label><br />
+						<input id="nameimg" class="input" name="nameimg" type="text" value="" size="30" /><br />
+					</div>
+					<div class="row">
+						<label for="url">Image-URL:</label><br />
+						<input id="url" class="input" name="url" type="text" value="" /><br />
+					</div>
+
+					<div class="row">
+						<label for="info">Image-info:</label><br />
+						<input id="info" class="input" name="info" rows="7" cols="30" value=""></input><br />
+					</div>
+					<div class="row">
+						<label for="update">Upload-date(dd/mm/yyyy):</label><br />
+						<input id="update" class="input" name="update" type="text" value=""></input><br />
+					</div>
+					<button id="Addimage_button" type="button">Add Image</button>
+				</form>
+
+            </div>
+			
+            
+        </div>
+
+    </div>
+    <div id="myModal1" class="modal1">
+
+    <div class="modal-content1">
+            <div class="modal-header1">
+              <span class="close1">&times;</span>
+              <h2>Update/Remove Image</h2>
+            </div>
+            <div class="modal-body1">
+              
+            <form id="remove_form" action="" name="form3" autocomplete="off">
+                <div class="row">
+                    <label for="nameimg1">Image-Name:</label><br />
+                    <input id="nameimg1" class="input" name="nameimg1" type="text" value="" size="30" /><br />
+                </div>
+                <div class="row">
+                    <label for="url1">Image-URL:</label><br />
+                    <input id="url1" class="input" name="url1" type="text" value="" /><br />
+                </div>
+                <div class="row">
+                    <label for="info1">Image-info:</label><br />
+                    <input id="info1" class="input" name="info1" rows="7" cols="30" value=""></input><br />
+                </div>
+                <div class="row">
+                    <label for="update1">Upload-date(dd/mm/yyyy):</label><br />
+                    <input id="update1" class="input" name="update1" type="text" value=""></input><br />
+                </div>
+                
+            </form>
+
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+<script src="script.js"></script>
+
+			
+</body>
+</html>

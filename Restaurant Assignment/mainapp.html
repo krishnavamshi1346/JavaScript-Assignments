@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+ 
+<body>
+
+<div id="container"> 
+<div id="left">
+   <div class="header"> 
+    <h3 style="text-align: center;">Tables</h3> 
+      <input type="text" id="TableInput" onkeyup="tableSearch()" placeholder="Search table.." title="Type in the table name">        
+   </div>   
+  
+  <div id="myTable"></div> 
+  </div>
+
+  <div id="right">
+   <div class="header"> 
+    <h3 style="text-align: center;">Menu</h3> 
+      <input type="text" id="MenuInput" onkeyup="menuSearch()" placeholder="Search menu.. by course, by item" title="Type in a name">        
+   </div>   
+  
+  <div id="myMenu"></div> 
+</div>
+</div>
+
+<div id="myModal" class="modal">
+  <div class="container"> 
+  <div id="mHeader">
+  <span class = "close">&times;</span>
+  <h3 id="Tab"></h3>
+  </div>
+
+  <div id="mBody">
+      <table id=mTable>
+      <tr>
+      <th> S.No </th>
+      <th> Item </th>
+      <th> Price </th>
+      <th> Quantity </th>
+      </tr>
+      </table>
+
+      <h3 id="TB" > </h3>
+
+      <button id="GenerateBill" > Generate Bill</button>
+      <br></br>
+  </div>
+  </div>
+  </div>
+
+
+  <div id="GModal" class="GModal">
+    <div class = "GBcontainer">
+      <div id = "GHeader">
+      <span class="close1">&times;</span>
+      <h3 id = "tno" style="display: inline"> </h3>
+      <h3 id="tno" style="display: inline"> </h3>
+      <h3 style="display: inline">  Pay The Bill </h3>
+      </div>
+      <div id = "GBody">
+      <h3 id="Tbill"></h3>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript" src = "script.js"></script>
+
+</body>
+</html>

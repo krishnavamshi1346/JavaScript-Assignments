@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
+<script>
+
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  var y = document.forms["myForm"]["email"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  if(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(y)){
+  return true;
+  }
+else{
+alert("Enter valid Email id ");
+return false;
+}
+
+}
+
+</script>
+
+<nav class="topnav">
+<a href="home.html">Home Page</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="gallery.html">Gallery</a>
+<a href="admin.html">Admin</a>
+
+</nav>
+</head>
+<body class="contact">
+<h1>Contact</h1>
+<div >
+<form class="contact-form" name="myForm" action="#" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  <br><br>
+Email:<input type="email" name="email" >
+<br> <br>
+  <input type="submit" value="Submit">
+</form>
+
+</div>
+</body>
+</html>
